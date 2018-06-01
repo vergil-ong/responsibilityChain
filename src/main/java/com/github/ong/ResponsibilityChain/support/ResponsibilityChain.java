@@ -1,10 +1,12 @@
 package com.github.ong.ResponsibilityChain.support;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class ResponsibilityChain implements Responsibility.Chain {
 
+    @Autowired
     private ResponsibilityRegister register;
 
     public ResponsibilityRegister getRegister() {
